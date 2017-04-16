@@ -1,0 +1,23 @@
+/*全局引入UI库*/
+@import "resources/lib/zanui/index.wxss";
+/**app.wxss**/
+text{
+  font-family: "微软雅黑"
+}
+
+.container {
+  background: #F9F9F9;
+  overflow: hidden;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+.container::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  content: ' ';
+  width: 100%;
+  height: 1rpx;
+  background-color: #e2e2e2;
+  z-index: 5;
+}

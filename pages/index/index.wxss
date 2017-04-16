@@ -1,0 +1,95 @@
+/*重置panle样式*/
+
+.zan-panel {
+  margin-top: 0;
+}
+
+.zan-panel .s-height {
+  height: 30rpx;
+  background-color: #f9f9f9;
+}
+
+/*设置顶部信息字体大小*/
+
+.zan-panel .s-height .zan-cell__bd, .zan-panel .s-height .zan-cell__ft {
+  font-size: 26rpx;
+}
+
+.zan-panel .s-height .zan-btn--plain {
+  border: none;
+}
+
+/*设置点击查询关于之后的颜色*/
+
+.zan-panel .s-height .setting:active {
+  background-color: #f9f9f9;
+}
+
+/*设置列表显示背景颜色*/
+
+.zan-panel .zan-cell--access {
+  background-color: #fff;
+}
+
+.scroll {
+  margin-top: -1rpx;
+}
+
+/*点击之后的样式*/
+
+.zan-panel .zan-cell--access:active {
+  background-color: #f9f9f9;
+}
+
+/*底部说明信息*/
+.scroll .zan-cell__ft{
+  font-size: 29rpx;
+}
+
+/*详细信息显示*/
+
+.zan-cell--access .address {
+  margin-top: 9rpx;
+  font-size: 24rpx;
+}
+
+/*页面底部说明信息*/
+
+.bottom-desc {
+  margin-top: 60rpx;
+  margin-bottom: 100rpx;
+  font-size: 24rpx;
+  padding: 0 100rpx;
+  text-align: center;
+  background-color: #f9f9f9;
+  border: none;
+  color: #b5afaf;
+}
+
+/*页面刷新按钮*/
+.refresh image{
+  width: 70rpx;
+  height: 70rpx;
+  position: fixed;
+  bottom: 120rpx;
+  right: 60rpx;
+}
+
+/*没有数据样式*/
+
+.no-data .zan-cell__bd {
+  text-align: center;
+  margin-top: 400rpx;
+  margin-bottom: 70rpx;
+}
+
+.no-data .zan-btns:active {
+  background-color: #f9f9f9;
+}
+
+/*没有连网*/
+
+.error-info {
+  margin-top: 400rpx;
+  text-align: center;
+}
