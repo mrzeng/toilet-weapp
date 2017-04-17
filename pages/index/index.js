@@ -8,7 +8,9 @@ Page({
     list: [],
     scrollTop: 0,
     size: 0,
-    onLine: true
+    onLine: true,
+    noAuth: false,
+    yesAuth: true
   },
   // 页面加载
   onLoad: function () {
@@ -38,6 +40,10 @@ Page({
             longitude: longitude
           },
           success: function (res) {
+            //有可能是参数有问题或者是网络
+            that.setData({
+              onLine: true
+            });
             //根据返回的结果marker在地图上面
             var data = res.data;
             that.setList(data);
@@ -49,9 +55,20 @@ Page({
             wx.hideLoading();
             //有可能是参数有问题或者是网络
             that.setData({
-              onLine: false
+              onLine: false,
+              noAuth: false,
+              yesAuth: true
             });
           }
+        });
+      },
+      fail: function (json) {
+        //关闭loading
+        wx.hideLoading();
+        //没有权限
+        that.setData({
+          noAuth: true,
+          yesAuth: false
         });
       }
     });
@@ -80,7 +97,9 @@ Page({
     //设置data
     that.setData({
       list: result,
-      size: result.length
+      size: result.length,
+      noAuth: false,
+      yesAuth: true
     });
   },
   //点击列表显示本地导航信息
@@ -94,7 +113,7 @@ Page({
       longitude: toilet.longitude,
       name: toilet.name,
       address: toilet.address,
-      scale: 28
+      scale: 15
     });
   },
   //根据marker唯一id查询信息
@@ -116,8 +135,16 @@ Page({
     wx.showLoading({ title: "数据更新中,别急!" });
     this.getData();
   },
+  doAuth: function () {
+    var that = this;
+    wx.openSetting({
+      success: (res) => {
+        that.doRefresh();
+      }
+    })
+  },
   // 设置界面跳转 跳转到关于界面
   navToSetting: function () {
-    
+
   }
 })

@@ -42,7 +42,8 @@
 }
 
 /*底部说明信息*/
-.scroll .zan-cell__ft{
+
+.scroll .zan-cell__ft {
   font-size: 29rpx;
 }
 
@@ -67,7 +68,8 @@
 }
 
 /*页面刷新按钮*/
-.refresh image{
+
+.refresh image {
   width: 70rpx;
   height: 70rpx;
   position: fixed;
@@ -75,21 +77,58 @@
   right: 60rpx;
 }
 
+.refresh image:active {
+  transform: rotate(720deg);
+  transition: all 1s ease;
+}
+
 /*没有数据样式*/
+
+.no-data {
+  height: calc(100vh);
+  text-align: center;
+}
 
 .no-data .zan-cell__bd {
   text-align: center;
-  margin-top: 400rpx;
+  margin-top: 50rpx;
   margin-bottom: 70rpx;
+  font-size: 30rpx;
+  line-height: 50rpx;
 }
 
 .no-data .zan-btns:active {
   background-color: #f9f9f9;
 }
 
+.no-data image {
+  height: 128px;
+  widows: 128px;
+  margin-top: 100px;
+}
+
 /*没有连网*/
 
-.error-info {
-  margin-top: 400rpx;
+.error {
+  background-color: #fff;
   text-align: center;
+}
+
+.error-info {
+  margin-top: 50rpx;
+  text-align: center;
+  padding: 0 150rpx;
+  font-size: 30rpx;
+  margin-bottom: 50rpx;
+  line-height: 50rpx;
+}
+
+.error .zan-panel {
+  height: calc(100vh);
+}
+
+.error image {
+  height: 128px;
+  widows: 128px;
+  margin-top: 100px;
 }

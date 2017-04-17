@@ -1,11 +1,12 @@
-<view class="container" wx:if="{{onLine}}">
+<view class="container" wx:if="{{onLine && yesAuth}}">
   <!--顶部基本信息-->
   <view class="zan-panel" wx:if="{{size > 0}}">
     <view class="zan-cell s-height">
       <view class="zan-cell__bd">为你推荐附近的{{size}}个公共厕所</view>
-      <button class="zan-btn zan-btn--mini zan-btn--plain"  bindtap="navToSetting"></button>
+      <button class="zan-btn zan-btn--mini zan-btn--plain" bindtap="navToSetting"></button>
     </view>
   </view>
+
   <!--视图滚动区域-->
   <scroll-view class="scroll" scroll-y="true" wx:if="{{size > 0}}">
     <view class="zan-panel">
@@ -18,27 +19,45 @@
       </view>
     </view>
   </scroll-view>
+
   <!--底部说明信息-->
   <view class="zan-panel bottom-desc" wx:if="{{size > 0}}">
-      <view class="zan-cell__bd">点击查询结果之后将会打开微信内置地图界面</view>
+    <view class="zan-cell__bd">点击查询结果之后将会打开微信内置地图界面</view>
   </view>
+
   <!--刷新按钮-->
   <view class="refresh" wx:if="{{size > 0}}" bindtap="doRefresh">
     <image src="../../images/refresh.png" mode="aspectFit"></image>
   </view>
+
   <!--查无结果时-->
   <view class="zan-panel no-data" wx:if="{{size == 0}}">
-      <view class="zan-cell__bd">亲，附近没有厕所。</view>
+    <image src="../../images/Sorry.png" mode="aspectFit"></image>
+    <view class="zan-cell__bd">我真的尽力了，附近1000米没有厕所</view>
     <view class="zan-btns">
-      <button class="zan-btn" bindtap="doRefresh">刷新试试</button>
+      <button class="zan-btn" bindtap="doRefresh">要不！刷新试试</button>
     </view>
   </view>
 </view>
+
+<!--没有权限-->
+<view class="container error" wx:if="{{noAuth}}">
+  <view class="zan-panel">
+    <image src="../../images/Sorry.png" mode="aspectFit"></image>
+    <view class="zan-cell__bd error-info">不是我不帮你，你连定位权限都不开启，我就没法了。</view>
+    <view class="zan-btns">
+      <button class="zan-btn" bindtap="doAuth">要不！重新获取权限</button>
+    </view>
+  </view>
+</view>
+
 <!--没有网络显示-->
 <view class="container error" wx:if="{{!onLine}}">
   <view class="zan-panel">
-    <view class="zan-cell">
-      <view class="zan-cell__bd error-info">在这个网络不可缺少的时代，居然没有连网，我也帮不了你了。</view>
+    <image src="../../images/Sorry.png" mode="aspectFit"></image>
+    <view class="zan-cell__bd error-info">在这个网络不可缺少的时代，居然没有连网，我也帮不了你了。</view>
+    <view class="zan-btns">
+      <button class="zan-btn" bindtap="doRefresh">要不！刷新试试</button>
     </view>
   </view>
 </view>
