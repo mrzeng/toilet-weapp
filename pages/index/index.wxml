@@ -30,6 +30,16 @@
     <image src="../../images/refresh.png" mode="aspectFit"></image>
   </view>
 
+  <!--厕所地图上显示按钮-->
+  <view class="location" wx:if="{{size > 0}}" bindtap="navToLocation">
+    <image src="../../images/location.png" mode="aspectFit"></image>
+  </view>
+
+  <!--关于按钮-->
+  <view class="about" wx:if="{{size > 0}}" bindtap="doAbout">
+    <image src="../../images/about.png" mode="aspectFit"></image>
+  </view>
+
   <!--查无结果时-->
   <view class="zan-panel no-data" wx:if="{{size == 0}}">
     <image src="../../images/Sorry.png" mode="aspectFit"></image>

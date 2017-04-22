@@ -6,6 +6,8 @@ var app = getApp()
 Page({
   data: {
     list: [],
+    latitude: 0,
+    longitude: 0,
     scrollTop: 0,
     size: 0,
     onLine: true,
@@ -32,6 +34,11 @@ Page({
       success: function (res) {
         var latitude = res.latitude
         var longitude = res.longitude
+        //设置经纬度值
+        that.setData({
+          latitude: latitude,
+          longitude: longitude
+        });
         //源码里面查询的是附近一公里的哦
         qqmapsdk.search({
           keyword: '厕所',
@@ -113,7 +120,7 @@ Page({
       longitude: toilet.longitude,
       name: toilet.name,
       address: toilet.address,
-      scale: 15
+      scale: 14
     });
   },
   //根据marker唯一id查询信息
@@ -144,7 +151,20 @@ Page({
     })
   },
   // 设置界面跳转 跳转到关于界面
-  navToSetting: function () {
+  navToLocation: function () {
+    var that = this;
+    //跳转传输的值
+    var param = {
+      latitude: that.data.latitude,
+      longitude: that.data.longitude,
+      list: that.data.list
+    }
+    wx.navigateTo({
+      url: '../location/location?param=' + JSON.stringify(param)
+    })
+  },
+  //关于按钮
+  doAbout: function () {
 
   }
 })

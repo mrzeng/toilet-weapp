@@ -73,8 +73,28 @@
   width: 70rpx;
   height: 70rpx;
   position: fixed;
-  bottom: 120rpx;
-  right: 60rpx;
+  bottom: 140rpx;
+  right: 50rpx;
+}
+
+/*地图上显示按钮*/
+.location image {
+  width: 70rpx;
+  height: 70rpx;
+  position: fixed;
+  bottom: 230rpx;
+  right: 50rpx;
+  background-color: #fff;
+}
+
+/*关于按钮*/
+.about image {
+  width: 70rpx;
+  height: 70rpx;
+  position: fixed;
+  bottom: 50rpx;
+  right: 50rpx;
+  background-color: #fff;
 }
 
 .refresh image:active {

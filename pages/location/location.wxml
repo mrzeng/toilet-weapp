@@ -1,0 +1,10 @@
+<view>
+    <map id="map" 
+        longitude="{{longitude}}" 
+        latitude="{{latitude}}" 
+        scale="14" 
+        markers="{{markers}}" 
+        bindmarkertap="markertap" 
+        show-location>
+    </map>
+</view>
