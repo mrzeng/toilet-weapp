@@ -1,7 +1,16 @@
 ## 微信小程序找厕所（小明带你找厕所）
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+
 先不废话，直接扫描体验
 
 <img src="./readme/bar_code.jpg" width = "200" height = "200" alt="图片名称" align=center />
+
+## 预览
+<img src="./readme/android_1.jpeg" width = "200" height = "350" alt="图片名称" align=center/>
+<img src="./readme/android_2.jpeg" width = "200" height = "350" alt="图片名称" align=center/>
+<img src="./readme/ios_1.jpeg" width = "200" height = "350" alt="图片名称" align=center/>
+<img src="./readme/ios_2.jpeg" width = "200" height = "350" alt="图片名称" align=center/>
+<img src="./readme/ios_3.jpeg" width = "200" height = "350" alt="图片名称" align=center/>
 
 ## 1 需求梳理
 ### 1.1 前言
@@ -87,3 +96,8 @@
 总的来说，开发不难，特别是对于已经熟悉react、vue、angular的语法同学们。在开发之前先把官网的介绍看看，开发文档过一遍，大致有个印象。然后在网上找找与小程序相关的ui框架，结合使用，让后看看腾讯或者高德关于小程序的地图API文档。
 
 现在的功能是有点简单，但是已经够满足实际使用，后续有空也将会进行功能完善。
+
+## 项目打赏
+需要联合开发小伙伴也可以发邮件给我说，还有如果您觉得我的案例能帮助到您，您可以打赏作者一瓶汽水 
+
+<img src="./readme/payment.JPG" width = "200" height = "200" alt="图片名称" align=center />
