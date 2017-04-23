@@ -1,12 +1,12 @@
 ## 微信小程序找厕所（小明带你找厕所）
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard) ![](https://jaywcjlove.github.io/sb/lang/chinese.svg)
 
 先不废话，直接扫描体验
 
 <img src="./readme/bar_code.jpg" width = "200" height = "200" alt="图片名称" align=center />
 
 ## 预览
-<img src="./readme/android_1.jpeg" width = "260" height = "450" alt="图片名称" align=center/><img src="./readme/android_2.jpeg" width = "260" height = "450" alt="图片名称" align=center/><img src="./readme/ios_1.jpeg" width = "260" height = "450" alt="图片名称" align=center/><img src="./readme/ios_2.jpeg" width = "260" height = "450" alt="图片名称" align=center/><img src="./readme/ios_3.jpeg" width = "260" height = "450" alt="图片名称" align=center/>
+<img src="./readme/android_1.jpeg" width = "260" height = "450" style="margin-right:10px;" alt="图片名称" align=center/><img src="./readme/android_2.jpeg" style="margin-right:10px;" width = "260" height = "450" alt="图片名称" align=center/><img src="./readme/ios_1.jpeg" style="margin-right:10px;" width = "260" height = "450" alt="图片名称" align=center/><img src="./readme/ios_2.jpeg" style="margin-right:10px;" width = "260" height = "450" alt="图片名称" align=center/><img src="./readme/ios_3.jpeg" width = "260" style="margin-right:10px;" height = "450" alt="图片名称" align=center/>
 
 ## 1 需求梳理
 ### 1.1 前言
@@ -96,4 +96,4 @@
 ## 项目打赏
 需要联合开发小伙伴也可以发邮件给我说，还有如果您觉得我的案例能帮助到您，您可以打赏作者一瓶汽水 
 
-<img src="./readme/payment.JPG" width = "200" height = "200" alt="图片名称" align=center />
+<img src="./readme/FullSizeRender.jpg" width = "190" height = "200" alt="图片名称" align=center />
