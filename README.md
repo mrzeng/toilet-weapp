@@ -6,11 +6,7 @@
 <img src="./readme/bar_code.jpg" width = "200" height = "200" alt="图片名称" align=center />
 
 ## 预览
-<img src="./readme/android_1.jpeg" width = "200" height = "350" alt="图片名称" align=center/>
-<img src="./readme/android_2.jpeg" width = "200" height = "350" alt="图片名称" align=center/>
-<img src="./readme/ios_1.jpeg" width = "200" height = "350" alt="图片名称" align=center/>
-<img src="./readme/ios_2.jpeg" width = "200" height = "350" alt="图片名称" align=center/>
-<img src="./readme/ios_3.jpeg" width = "200" height = "350" alt="图片名称" align=center/>
+<img src="./readme/android_1.jpeg" width = "200" height = "350" alt="图片名称" align=center/><img src="./readme/android_2.jpeg" width = "200" height = "350" alt="图片名称" align=center/><img src="./readme/ios_1.jpeg" width = "200" height = "350" alt="图片名称" align=center/><img src="./readme/ios_2.jpeg" width = "200" height = "350" alt="图片名称" align=center/><img src="./readme/ios_3.jpeg" width = "200" height = "350" alt="图片名称" align=center/>
 
 ## 1 需求梳理
 ### 1.1 前言
